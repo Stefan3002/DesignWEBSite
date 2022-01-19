@@ -1,0 +1,27 @@
+#Section2Grid
+  height: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  gap: 0
+  justify-content: center
+  img
+    margin: 0 3px
+    height: auto
+    width: 23vw
+    min-width: 240px
+    border-radius: 2px
+    transition: opacity 1s ease-in-out
+    &:hover
+      opacity: 80%
+      transition: opacity .5s ease-in-out
+  h3
+    margin-top: 1px
+    transition: opacity .5s ease-in-out
+    font-size: clamp($Header-size)
+    text-align: center
+    &:hover
+      opacity: 50%
+      transition: opacity .5s ease-in-out
+#Section2
+  h1
+    text-align: center

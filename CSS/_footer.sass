@@ -1,0 +1,44 @@
+footer
+  position: relative
+  @include Parallaxer("../Images/Footer-bg.jpg",50%)
+  #FooterA
+    line-height: 30px
+    position: absolute
+    bottom: 0
+    left: 0
+    h1
+      font-size: clamp($Header-size)
+      color: white
+      margin: 15px
+  #FooterB
+    margin: 10px
+    padding: 5px
+    position: absolute
+    right: 0
+    top: 50%
+    input
+      color: white
+      background: transparent
+      border: 0
+      border-bottom: 3px solid white
+      transition: width 2s ease-in-out
+      width: 20vw
+      &:hover
+        width: 40vw
+        transition: width .5s ease-out
+      &:focus
+        width: 40vw
+        transition: width .5s ease-out
+
+    button
+      background: transparent
+      border: 0
+      //border-bottom: 3px solid white
+      color: white
+      font-family: $header-font
+      font-size: clamp($Header-size)
+      transition: background .5s
+      border-radius: 5px
+      &:hover
+        background: gray
+        transition: background .5s

@@ -1,0 +1,35 @@
+@import fonts&colors.sass
+@import Parallaxer.sass
+
+#Intro
+  img
+    float: left
+    margin: 5px
+  nav
+    font-family: $header-font
+    font-size: clamp($Header-size)
+    list-style: none
+    display: flex
+    flex-direction: row
+    float: right
+    li
+      padding: 5px
+      margin: 2px
+      color: black
+      transition: color, .5s
+      border-radius: 5px
+      &:hover
+        color: white
+        transition: color, 1s
+    img
+      float: left
+      margin: 3px
+  #IntroA
+    h1
+      font-size: clamp($Header-size)
+      position: absolute
+      bottom: 0
+      left: 0
+      color: white
+      margin: 15px
+  @include Parallaxer("../Images/Bg1.jpg",100%)

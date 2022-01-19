@@ -1,0 +1,33 @@
+@import _normalize.scss
+@import fonts&colors.sass
+@import intro.sass
+@import _section2.sass
+@import adaptable.sass
+@import _footer.sass
+
+html
+  box-sizing: border-box
+  height: 100%
+  width: 100%
+
+body
+  font-family: $body-font
+  font-size: clamp(.1rem, 1.5vw, .8rem)
+  margin: 0
+  padding: 0
+  height: 100%
+  width: 100%
+
+h1,h2,h3,h4,h5,h6
+  font-family: $header-font
+  &:last-of-type
+    margin-bottom: 2px
+
+h1
+  font-size: clamp($Header-size)
+
+.ref-link
+  font-size: 15px
+  padding: 0
+  margin: .5px
+
