@@ -343,11 +343,27 @@ template {
     margin: 15px; }
 
 #Section2Grid {
+  margin: 30px 40px;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0;
   justify-content: center; }
+  #Section2Grid .Grid-item {
+    position: relative; }
+    #Section2Grid .Grid-item:nth-child(odd) h3 {
+      color: red; }
+  #Section2Grid .OverLay {
+    color: White;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
   #Section2Grid img {
     margin: 0 3px;
     height: auto;
@@ -356,8 +372,8 @@ template {
     border-radius: 2px;
     transition: opacity 1s ease-in-out; }
     #Section2Grid img:hover {
-      opacity: 80%;
-      transition: opacity 0.5s ease-in-out; }
+      opacity: 70%;
+      transition: opacity 0.5s ease-out; }
   #Section2Grid h3 {
     margin-top: 1px;
     transition: opacity 0.5s ease-in-out;
@@ -427,6 +443,7 @@ footer {
         transition: background 0.5s; }
 
 #Section3Grid {
+  margin: 30px 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
