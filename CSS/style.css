@@ -373,10 +373,14 @@ template {
 @media screen and (max-width: 900px) {
   #Section2Grid {
     display: inline;
+    text-align: center; }
+
+  #Section3Grid {
+    display: inline;
     text-align: center; } }
 footer {
   position: relative;
-  height: 50%;
+  height: 60%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../Images/Footer-bg.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -422,7 +426,64 @@ footer {
         background: gray;
         transition: background 0.5s; }
 
+#Section3Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  justify-content: center; }
+  #Section3Grid .Grid-item {
+    padding: 0;
+    background: white;
+    margin: 5px;
+    border-radius: 1rem;
+    transition: background 1s ease-in-out; }
+    #Section3Grid .Grid-item p {
+      text-align: left; }
+    #Section3Grid .Grid-item:hover {
+      background: gray;
+      transition: background 0.5s ease-in; }
+    #Section3Grid .Grid-item .HalfImage {
+      max-width: 100%;
+      display: block;
+      object-fit: cover; }
+  #Section3Grid .Avatar {
+    margin: 0;
+    margin-left: 5px;
+    height: auto;
+    width: 20%; }
+  #Section3Grid .HalfCard {
+    height: 50%;
+    background: #7fa9eb;
+    background: linear-gradient(90deg, #7fa9eb 0%, #796909 49%, #c800ff 100%); }
+  #Section3Grid h5 {
+    margin-bottom: 45px;
+    font-size: clamp(0.8rem, 5vw, 1.5rem);
+    font-family: "Mochiy Pop P One", sans-serif; }
+  #Section3Grid .FlexItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  #Section3Grid h3 {
+    margin-left: 3px;
+    margin-top: 1px;
+    transition: opacity 0.5s ease-in-out;
+    font-size: clamp(0.3rem, 4vw, 4.5rem);
+    text-align: left; }
+    #Section3Grid h3:hover {
+      opacity: 50%;
+      transition: opacity 0.5s ease-in-out; }
+
+#Section3 {
+  background: #f91515;
+  background: linear-gradient(90deg, #f91515 0%, #796909 49%, #00d4ff 100%); }
+  #Section3 h1 {
+    margin-top: 0;
+    color: white;
+    text-align: center; }
+
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   height: 100%;
   width: 100%; }

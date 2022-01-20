@@ -1,0 +1,58 @@
+#Section3Grid
+  //position: relative
+  //height: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  gap: 15px
+  justify-content: center
+  .Grid-item
+    p
+      text-align: left
+    padding: 0
+    background: white
+    margin: 5px
+    border-radius: 1rem
+    transition: background 1s ease-in-out
+    &:hover
+      background: gray
+      transition: background .5s ease-in
+    .HalfImage
+      max-width: 100%
+      display: block
+      object-fit: cover
+  .Avatar
+    //float: left
+    margin: 0
+    margin-left: 5px
+    height: auto
+    width: 20%
+  .HalfCard
+    height: 50%
+    background: rgb(127,169,235)
+    background: linear-gradient(90deg, rgba(127,169,235,1) 0%, rgba(121,105,9,1) 49%, rgba(200,0,255,1) 100%)
+  h5
+    margin-bottom: 45px
+    font-size: $body-size
+    font-family: $body-font
+  .FlexItem
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+  h3
+    margin-left: 3px
+    margin-top: 1px
+    transition: opacity .5s ease-in-out
+    font-size: clamp($Header-size)
+    text-align: left
+    &:hover
+      opacity: 50%
+      transition: opacity .5s ease-in-out
+#Section3
+  //height: 200%
+  background: rgb(249,21,21)
+  background: linear-gradient(90deg, rgba(249,21,21,1) 0%, rgba(121,105,9,1) 49%, rgba(0,212,255,1) 100%)
+  h1
+    margin-top: 0
+    color: white
+    text-align: center
