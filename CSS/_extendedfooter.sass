@@ -1,0 +1,39 @@
+#ExtendedFooterContainer
+  overflow: hidden
+#ExtendedFooter
+  .MiddleDown
+    animation-fill-mode: backwards
+    animation-delay: .5s
+    animation-name: SlideDown
+    animation-duration: 1s
+  .Left
+    animation-duration: 1s
+    animation-name: SlideLeft
+  .Right
+    animation-duration: .8s
+    animation-name: SlideRight
+  .MiddleUp
+    animation-name: SlideUp
+    animation-duration: .5s
+    animation-delay: .7s
+    animation-fill-mode: backwards
+  .MiddlePopUp
+    animation-name: PopUp
+    animation-duration: 1.4s
+
+
+  margin: 0 10px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  .ExtendedFooterItem
+    margin: 5px 0
+    flex: 1
+    img
+      cursor: pointer
+      transition: opacity 1s ease-in-out
+      &:hover
+        opacity: 50%
+        transition: opacity .5s ease-out
+

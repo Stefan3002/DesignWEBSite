@@ -402,6 +402,10 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+  footer .SeeMore {
+    position: absolute;
+    right: 10px;
+    bottom: 10px; }
   footer #FooterA {
     line-height: 30px;
     position: absolute;
@@ -499,6 +503,71 @@ footer {
     color: white;
     text-align: center; }
 
+#ExtendedFooterContainer {
+  overflow: hidden; }
+
+#ExtendedFooter {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  #ExtendedFooter .MiddleDown {
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    animation-name: SlideDown;
+    animation-duration: 1s; }
+  #ExtendedFooter .Left {
+    animation-duration: 1s;
+    animation-name: SlideLeft; }
+  #ExtendedFooter .Right {
+    animation-duration: 0.8s;
+    animation-name: SlideRight; }
+  #ExtendedFooter .MiddleUp {
+    animation-name: SlideUp;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: backwards; }
+  #ExtendedFooter .MiddlePopUp {
+    animation-name: PopUp;
+    animation-duration: 1.4s; }
+  #ExtendedFooter .ExtendedFooterItem {
+    margin: 5px 0;
+    flex: 1; }
+    #ExtendedFooter .ExtendedFooterItem img {
+      cursor: pointer;
+      transition: opacity 1s ease-in-out; }
+      #ExtendedFooter .ExtendedFooterItem img:hover {
+        opacity: 50%;
+        transition: opacity 0.5s ease-out; }
+
+@keyframes SlideDown {
+  0% {
+    transform: translateY(-150%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes SlideUp {
+  0% {
+    transform: translateY(150%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes PopUp {
+  0% {
+    transform: scale(0.3); }
+  90% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+@keyframes SlideLeft {
+  0% {
+    transform: translateX(-150%); }
+  100% {
+    transform: translateX(0); } }
+@keyframes SlideRight {
+  0% {
+    transform: translateX(350%); }
+  100% {
+    transform: translateX(0); } }
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
