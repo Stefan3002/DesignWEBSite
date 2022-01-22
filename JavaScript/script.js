@@ -5,18 +5,18 @@ function ExtendFooter() {
     <img class="Left" src="Images/SocialMedia%20Icons/Facebook.png">
     </div>
     <div class="ExtendedFooterItem">
-    <img class="MiddleUp" src="../Images/Twitter.png">
+    <img class="MiddleUp" src="Images/SocialMedia%20Icons/Twitter.png">
     </div>
     <div class="ExtendedFooterItem">
-    <img class="MiddlePopUp" src="../Images/SocialMedia%20Icons/Instagram.png">
+    <img class="MiddlePopUp" src="Images/SocialMedia%20Icons/Instagram.png">
     </div>
     <div class="ExtendedFooterItem">
-    <img class="MiddleDown" src="../Images/SocialMedia%20Icons/Mail.png">
+    <img class="MiddleDown" src="Images/SocialMedia%20Icons/Mail.png">
     </div>
     <div class="ExtendedFooterItem">
-    <img class="Right" src="../Images/SocialMedia%20Icons/LinkedIn.png">
+    <img class="Right" src="Images/SocialMedia%20Icons/LinkedIn.png">
     </div>
-    <img class="Right" onclick="RemoveFooter()" src="../Images/SocialMedia%20Icons/Minus.png">
+    <img class="Right" onclick="RemoveFooter()" src="Images/SocialMedia%20Icons/Minus.png">
     
 `
 
