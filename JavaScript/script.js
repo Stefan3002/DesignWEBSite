@@ -5,7 +5,7 @@ function ExtendFooter() {
     <img class="Left" src="Images/SocialMedia%20Icons/Facebook.png">
     </div>
     <div class="ExtendedFooterItem">
-    <img class="MiddleUp" src="../Images/SocialMedia%20Icons/Twitter.png">
+    <img class="MiddleUp" src="../Images/SocialMediaIcons/Twitter.png">
     </div>
     <div class="ExtendedFooterItem">
     <img class="MiddlePopUp" src="../Images/SocialMedia%20Icons/Instagram.png">
