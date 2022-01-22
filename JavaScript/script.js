@@ -2,7 +2,7 @@ function ExtendFooter() {
     console.log("dsadas")
     const content = `
     <div class="ExtendedFooterItem">
-    <img class="Left" src="../Images/SocialMedia%20Icons/Facebook.png">
+    <img class="Left" src="Images/SocialMedia%20Icons/Facebook.png">
     </div>
     <div class="ExtendedFooterItem">
     <img class="MiddleUp" src="../Images/SocialMedia%20Icons/Twitter.png">
